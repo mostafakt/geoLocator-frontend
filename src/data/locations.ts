@@ -9,6 +9,7 @@ export const locationApi = createApi({
   reducerPath: "location",
   tagTypes: ["search"],
   endpoints: (builder) => ({
+    //@ts-ignore
     getLocation: builder.mutation<ILocationResponse>({
       query: (request) => ({
         url: `geolocation/find`,
